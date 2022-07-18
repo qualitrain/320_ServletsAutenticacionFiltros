@@ -1,0 +1,38 @@
+	body
+	{
+		background-color:black;
+	}
+	div.texto{
+		background-image:url("../imagenes/181181-310-253.jpg");
+		margin: 2em 3em ;
+		text-align:justify;
+		border:solid Snow;
+	}
+	h2
+	{
+		margin-top:5em;
+		font-size:3em;
+		color:navy;
+		text-align:center;
+		background-color:Azure;
+		margin-left: 3.8em;
+		margin-right: 4em;
+		
+	}
+	p
+	{
+		font-family:"Times New Roman";
+		font-size:2.3em;
+		color:White;
+		background-color:rgba(255,0,0,0.3);
+		margin:3em 5em ;
+	}
+	p.nota
+	{
+		background-color:Tan;
+		color:Maroon;
+		font-family:"Arial";
+		font-size:.9em;
+		margin:10em 13em ;
+		padding: 10px;
+	}

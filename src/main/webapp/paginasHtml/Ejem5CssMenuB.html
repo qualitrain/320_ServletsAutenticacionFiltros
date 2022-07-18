@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>Ejemplo Menu</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<style>
+a {
+	text-decoration:none;
+	color:white;
+	display:block; /* usa todo el ancho del elemento */
+	width:200px;
+	height:22px;
+	cursor:cell;
+}
+a:hover {
+	background-color: red;
+	color:white;
+	text-align:center;
+	letter-spacing:1px;
+}
+ul
+{
+	list-style-type:none; /* elimina el marcador de los items */
+	padding:0px;
+	margin:0px;
+}
+.menu-item {
+	width:200px;
+	min-height:22px;
+}
+.sub-menu-item{
+	text-indent:25px;
+}
+#menu-item- {
+	background-color: MidnightBlue;
+}
+#menu-item-A {
+	background-color: DarkGreen;
+	position:relative;
+	left:200px;
+	top:-22px;
+}
+#menu-item-B {
+	background-color: LightSkyBlue;
+	position:relative;
+	left:400px;
+	top:-198px;
+}
+#menu-item-C {
+	background-color: DarkSlateGray;
+	position:relative;
+	left:600px;
+	top:-374px;
+}
+#menu-item-D {
+	background-color: DimGray;
+	position:relative;
+	left:800px;
+	top:-396px;
+}
+#menu-item-E {
+	background-color: SteelBlue;
+	position:relative;
+	left:1000px;
+	top:-418px;
+}
+#menu-item-F {
+	position:relative;
+	left:1200px;
+	top:-457px;
+	max-height:22px;
+}
+</style>
+</head>
+<body>
+<nav class="main-nav clearfix">
+<ul id="menu-menu-principal" class="menu">
+	<li id="menu-item-" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4 current_page_item menu-item-21">
+		<a href="OpcionInicio">Inicio</a>
+	</li>
+	<li id="menu-item-A" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111">
+		<a href="SubMenuAOpcionGral">Submenu A,opcion general</a>
+		<ul class="sub-menu">
+			<li id="menu-item-112" class="menu-item sub-menu-item">
+				<a href="SubMenuAOpcion1">Submenu A, opcion 1</a>
+			</li>
+			<li id="menu-item-121" class="menu-item sub-menu-item">
+				<a href="SubMenuAOpcion2">Submenu A, opcion 2</a>
+			</li>
+			<li id="menu-item-126" class="menu-item sub-menu-item">
+				<a href="SubMenuAOpcion3">Submenu A, opcion 3</a>
+			</li>
+			<li id="menu-item-130" class="menu-item sub-menu-item">
+				<a href="SubMenuAOpcion4">Submenu A, opcion 4</a>
+			</li>
+			<li id="menu-item-139" class="menu-item sub-menu-item">
+				<a href="SubMenuAOpcion5">Submenu A, opcion 5</a>
+			</li>
+			<li id="menu-item-1132" class="menu-item sub-menu-item">
+				<a href="SubMenuAOpcion6">Submenu A, opcion 6</a>
+			</li>
+			<li id="menu-item-147" class="menu-item sub-menu-item">
+				<a href="SubMenuAOpcion7">Submenu A, opcion 7</a>
+			</li>
+		</ul>
+	</li>
+	<li id="menu-item-B" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61">
+		<a href="SubMenuBOpcionGral">Submenu B,opcion general</a>
+		<ul class="sub-menu">
+			<li id="menu-item-1141" class="menu-item sub-menu-item">
+				<a href="SubMenuBOpcion1">Submenu B, opcion 1</a>
+			</li>
+			<li id="menu-item-1136" class="menu-item sub-menu-item">
+				<a href="SubMenuBOpcion2">Submenu B, opcion 2</a>
+			</li>
+			<li id="menu-item-1135" class="menu-item sub-menu-item">
+				<a href="SubMenuBOpcion3">Submenu B, opcion 3</a>
+			</li>
+			<li id="menu-item-1140" class="menu-item sub-menu-item">
+				<a href="SubMenuBOpcion4">Submenu B, opcion 4</a>
+			</li>
+			<li id="menu-item-1139" class="menu-item sub-menu-item">
+				<a href="SubMenuBOpcion5">Submenu B, opcion 5</a></li>
+			<li id="menu-item-1138" class="menu-item sub-menu-item">
+				<a href="SubMenuBOpcion6">Submenu B, opcion 6</a>
+			</li>
+			<li id="menu-item-1137" class="menu-item sub-menu-item">
+				<a href="SubMenuBOpcion7">Submenu B, opcion 7</a>
+			</li>
+		</ul>
+	</li>
+	<li id="menu-item-C" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
+		<a href="OpcionC">Opcion C</a>
+	</li>
+	<li id="menu-item-D" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52">
+		<a href="OpcionD">Opcion D</a>
+	</li>
+	<li id="menu-item-E" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80">
+		<a href="OpcionE">Opcion E</a>
+	</li>
+	</ul>                                        
+<!-- GLOBAL SEARCH -->
+	<form id="menu-item-F" method="get" action="buscador" id="topsearch">
+		<p>
+			<input type="text" placeholder="Buscar" name="s" id="tsearch">
+			<input type="submit" id="topsubmit" value="">
+		</p>
+	</form>
+</nav>
+</body>
+</html>

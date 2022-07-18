@@ -1,0 +1,35 @@
+@CHARSET "ISO-8859-1";
+	body
+	{
+		background-image:url("../imagenes/amanda2022.jpg");
+	}
+	div.texto{
+		background-color:Honeydew;
+		margin:12em 8em ;
+		text-align:justify;
+		border:solid DarkGreen;
+		
+	}
+	h2
+	{
+		margin-top:3em;
+		font-size:2em;
+		color:navy;
+		text-align:center;
+		background-color:Azure;
+	}
+	p
+	{
+		font-family:"Times New Roman";
+		font-size:1.5em;
+		color:blue;
+		margin:2em 3em ;
+		
+	}
+	p.nota
+	{
+		font-family:"Arial";
+		font-size:.8em;
+		margin:1em 6em ;
+		
+	}

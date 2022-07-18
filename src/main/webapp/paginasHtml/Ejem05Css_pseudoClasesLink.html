@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cambiando el formato de los links</title>
+<style>
+	a {font-weight:900;}
+	a:link {color:#FF0000;}    /* enlace no visitado */
+	a:visited {color:#00FF00;} /* enlace ya visitado */
+	a:hover {color:#FF00FF;
+		background-color:yellow ;}   /* ratón sobre el enlace */
+	a:active {color:#0000FF;}  /* enlace seleccionado */
+	.resaltado{
+	background-color:yellow ;
+	}
+	.negrita{
+		font-weight:900;
+	}
+</style>
+</head>
+<body>
+<p>
+	<ul>
+	<li><a href="Ejem5CssMenuC.html" >Un enlace a un ejemplo CSS</a></li>
+	<li><a href="Ejem6CssTabla.html" >Un enlace a otro ejemplo CSS</a></li>
+	</ul>
+
+<p><span class="negrita">Nota:</span>
+<span class="resaltado">a:hover</span> DEBE especificarse DESPUES 
+de <span class="resaltado">a:link</span> y de <span class="resaltado">a:visited</span>
+en CSS para que funcione.</p>
+<p><span class="negrita">Nota:</span> <span class="resaltado">a:active</span>  DEBE especificarse DESPUES 
+de <span class="resaltado">a:hover</span>  en CSS 
+para que funcione.</p>
+</body>
+</html>

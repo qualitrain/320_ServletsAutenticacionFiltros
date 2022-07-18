@@ -1,0 +1,86 @@
+body{
+    background:#FFFFFF;
+    margin:9px;
+    font: 8pt/14pt 'Lucida Grande', Verdana, Helvetica, sans-serif;
+    color:#666666;
+    outline:1px dashed black;
+}
+
+A:link{ color:#DF0101; text-decoration:none; }
+A:hover{ color:#D7DF01; text-decoration:underline; }
+A:active{ color:#01DF01; text-decoration:none; }
+A:active:hover{ color:#013ADF; text-decoration:underline; }
+A:visited{ color:#DF01D7; text-decoration:none; }
+A:visited:hover{ color:#B50000; text-decoration:underline; }
+
+
+#areaPrincipal{
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    outline:1px dashed SpringGreen;
+}
+
+#barraLateral{
+    float:left;
+    text-align:left;
+    width:150px;
+    outline: 1px dashed Silver;
+}
+
+#ContenedorPrincipal{
+    width:600px;
+    margin-left:160px;
+    border-left:#CCCCCC 1px solid;
+    outline:1px dashed Salmon;
+}
+
+#contenido{
+    padding:20px;
+    text-align:justify;
+    outline:1px dashed #08088A;
+}
+h1{
+    text-align:center;
+    color:Black;
+    font-size:18pt;
+    font-weight:bold;
+    outline:1px dashed #FE9A2E;
+}
+h2{
+    text-align:center;
+    color:#B50000;
+    font-size:16pt;
+    font-weight:normal;
+    outline:1px dashed #FE9A2E;
+}
+p.instruccion{
+	padding-top:10px;
+    text-align:left;
+    color:#2E2E2E;
+    font-size:12pt;
+    outline:1px dashed #FE9A2E;
+}
+
+#encabezadoGeneral{
+    height:120px;
+    margin-top:30px;
+    border-bottom:#CCCCCC 1px solid;
+    text-align:right;
+    font-size:10pt;
+    letter-spacing:-1px;
+    color:#CCCCCC;
+    outline:1px dashed #F5DA81;
+}
+
+#piePagina{
+    text-align:center;
+    font-size:10px;
+    height:30px;
+    margin-top:10px;
+    border-top:#CCCCCC 1px solid;
+    text-transform:lowercase;
+    outline:1px dashed Red;
+}
+
+

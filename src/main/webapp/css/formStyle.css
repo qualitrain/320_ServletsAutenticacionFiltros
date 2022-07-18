@@ -1,0 +1,15 @@
+/* 
+Document   : formStyle
+Created on : 2/01/2014
+Author     : acr
+Description:
+	Ejemplo
+*/
+form{
+	outline:1px dashed #0404B4;
+}
+input{
+    color: #000;
+    background: #F3F3F0;
+    border: 1px outset #B50000
+}
