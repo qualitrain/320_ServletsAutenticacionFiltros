@@ -15,13 +15,13 @@
   </context-param>
   <context-param>
 	  <param-name>gestorAutenticacion</param-name>
-	  <param-value>qtx.autenticacion.web.GestorAutenticacionWeb</param-value>
+	  <param-value>mx.com.qtx.autenticacion.impl.GestorAutenticacionWeb</param-value>
   </context-param>
   <!-- -
    -->
   <servlet>
     <servlet-name>A_probadorHtmlBasico</servlet-name>
-    <servlet-class>qtx.servlets.A_probadorHtmlBasico</servlet-class>
+    <servlet-class>mx.com.qtx.demohtml.demos.A_probadorHtmlBasico</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>A_probadorHtmlBasico</servlet-name>
@@ -31,7 +31,7 @@
     <description></description>
     <display-name>B_probadorCaracteresEspeciales</display-name>
     <servlet-name>B_probadorCaracteresEspeciales</servlet-name>
-    <servlet-class>qtx.servlets.B_probadorCaracteresEspeciales</servlet-class>
+    <servlet-class>mx.com.qtx.demohtml.demos.B_probadorCaracteresEspeciales</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>B_probadorCaracteresEspeciales</servlet-name>
@@ -41,7 +41,7 @@
     <description></description>
     <display-name>C_probadorDeListas</display-name>
     <servlet-name>C_probadorDeListas</servlet-name>
-    <servlet-class>qtx.servlets.C_probadorDeListas</servlet-class>
+    <servlet-class>mx.com.qtx.demohtml.demos.C_probadorDeListas</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>C_probadorDeListas</servlet-name>
@@ -51,7 +51,7 @@
     <description></description>
     <display-name>D_probadorDeListasMasElaboradas</display-name>
     <servlet-name>D_probadorDeListasMasElaboradas</servlet-name>
-    <servlet-class>qtx.servlets.D_probadorDeListasMasElaboradas</servlet-class>
+    <servlet-class>mx.com.qtx.demohtml.demos.D_probadorDeListasMasElaboradas</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>D_probadorDeListasMasElaboradas</servlet-name>
@@ -61,7 +61,7 @@
     <description></description>
     <display-name>E_probadorLinks</display-name>
     <servlet-name>E_probadorLinks</servlet-name>
-    <servlet-class>qtx.servlets.E_probadorLinks</servlet-class>
+    <servlet-class>mx.com.qtx.demohtml.demos.E_probadorLinks</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>E_probadorLinks</servlet-name>
@@ -71,7 +71,7 @@
     <description></description>
     <display-name>F_probadorImagenes</display-name>
     <servlet-name>F_probadorImagenes</servlet-name>
-    <servlet-class>qtx.servlets.F_probadorImagenes</servlet-class>
+    <servlet-class>mx.com.qtx.demohtml.demos.F_probadorImagenes</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>F_probadorImagenes</servlet-name>
@@ -81,7 +81,7 @@
     <description></description>
     <display-name>G_probadorMapaInteractivo</display-name>
     <servlet-name>G_probadorMapaInteractivo</servlet-name>
-    <servlet-class>qtx.servlets.G_probadorMapaInteractivo</servlet-class>
+    <servlet-class>mx.com.qtx.demohtml.demos.G_probadorMapaInteractivo</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>G_probadorMapaInteractivo</servlet-name>
@@ -91,7 +91,7 @@
     <description></description>
     <display-name>G_probadorMapaInteractivoB</display-name>
     <servlet-name>G_probadorMapaInteractivoB</servlet-name>
-    <servlet-class>qtx.servlets.G_probadorMapaInteractivoB</servlet-class>
+    <servlet-class>mx.com.qtx.demohtml.demos.G_probadorMapaInteractivoB</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>G_probadorMapaInteractivoB</servlet-name>
@@ -101,7 +101,7 @@
     <description></description>
     <display-name>G_probadorMapaInteractivoC</display-name>
     <servlet-name>G_probadorMapaInteractivoC</servlet-name>
-    <servlet-class>qtx.servlets.G_probadorMapaInteractivoC</servlet-class>
+    <servlet-class>mx.com.qtx.demohtml.demos.G_probadorMapaInteractivoC</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>G_probadorMapaInteractivoC</servlet-name>
@@ -111,7 +111,7 @@
     <description></description>
     <display-name>H_probadorTablas</display-name>
     <servlet-name>H_probadorTablas</servlet-name>
-    <servlet-class>qtx.servlets.H_probadorTablas</servlet-class>
+    <servlet-class>mx.com.qtx.demohtml.demos.H_probadorTablas</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>H_probadorTablas</servlet-name>
@@ -121,7 +121,7 @@
     <description></description>
     <display-name>I_probadorCss</display-name>
     <servlet-name>I_probadorCss</servlet-name>
-    <servlet-class>qtx.servlets.I_probadorCss</servlet-class>
+    <servlet-class>mx.com.qtx.demohtml.demos.I_probadorCss</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>I_probadorCss</servlet-name>
@@ -130,12 +130,12 @@
   <!-- -
    -->
   <listener>
-    <listener-class>qtx.autenticacion.web.EscuchaCicloVidaContexto</listener-class>
+    <listener-class>mx.com.qtx.autenticacion.EscuchaCicloVidaContexto</listener-class>
   </listener>
   <filter>
     <display-name>FiltroPeticiones</display-name>
     <filter-name>FiltroPeticiones</filter-name>
-    <filter-class>qtx.monitoreo.filtros.FiltroPeticiones</filter-class>
+    <filter-class>mx.com.qtx.monitoreo.filtros.FiltroPeticiones</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>FiltroPeticiones</filter-name>
@@ -144,7 +144,7 @@
   <filter>
     <display-name>FiltroCensura</display-name>
     <filter-name>FiltroCensura</filter-name>
-    <filter-class>qtx.monitoreo.filtros.FiltroCensura</filter-class>
+    <filter-class>mx.com.qtx.monitoreo.filtros.FiltroCensura</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>FiltroCensura</filter-name>
@@ -156,7 +156,7 @@
     <description></description>
     <display-name>LoginServlet</display-name>
     <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>qtx.autenticacion.LoginServlet</servlet-class>
+    <servlet-class>mx.com.qtx.autenticacion.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LoginServlet</servlet-name>
@@ -165,7 +165,7 @@
   <filter>
     <display-name>FiltroAutenticacion</display-name>
     <filter-name>FiltroAutenticacion</filter-name>
-    <filter-class>qtx.autenticacion.FiltroAutenticacion</filter-class>
+    <filter-class>mx.com.qtx.autenticacion.FiltroAutenticacion</filter-class>
     <init-param>
       <description></description>
       <param-name>paginaProtegida01</param-name>

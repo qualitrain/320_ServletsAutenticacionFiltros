@@ -1,0 +1,40 @@
+Es un Demo de elementos html generados dinámicamente por diversos servlets, que pueden invocarse:
+http://localhost:8080/320_ServletsAutenticacionFiltros/HtmlA : Elementos h1..h5: 
+http://localhost:8080/320_ServletsAutenticacionFiltros/HtmlB : Entidades html y manejo de caracteres especiales
+http://localhost:8080/320_ServletsAutenticacionFiltros/HtmlC : Elementos ol, ul y li con estilos diversos
+http://localhost:8080/320_ServletsAutenticacionFiltros/HtmlD : Elementos dl, dt, dd, ol, ul y li con estilos diversos
+http://localhost:8080/320_ServletsAutenticacionFiltros/HtmlE : Links, elementos a y manejo de rutas relativas y absolutas
+http://localhost:8080/320_ServletsAutenticacionFiltros/HtmlF : Manejo de imágenes, elementos img
+http://localhost:8080/320_ServletsAutenticacionFiltros/HtmlG : Mapas interactivos, elementos img, atributo ismap
+http://localhost:8080/320_ServletsAutenticacionFiltros/HtmlGB : Mapas interactivos avanzados
+http://localhost:8080/320_ServletsAutenticacionFiltros/HtmlGC : Mapas interactivos avanzados
+http://localhost:8080/320_ServletsAutenticacionFiltros/HtmlH : Tablas, elmentos table, tr, th, td, etc.
+http://localhost:8080/320_ServletsAutenticacionFiltros/HtmlI : CSS
+
+Notas:
+
+1. Incluye filtro (FiltroCensura) que censura urls /imagenes/* y remplaza determinadas imágenes por otras
+
+2. Incluye filtro que monitorea todas las peticiones recibidas (FiltroPeticiones)
+
+3. Incluye clases diversas para implementar la autenticación
+
+3.1 Filtro de Autenticación (FiltroAutenticacion): 
+     Al arrancar, carga las urls que están protegidas, de la configuración en el web.xml
+ 
+     Checa si una url está protegida
+        en ese caso checa si el usuario ya está autenticado
+           delega la petición a la cadena de procesamiento
+        caso contrario
+           redirige a la raíz (página de login)
+     caso contrario
+        delega la petición a la cadena de procesamiento
+        
+3.2 ServletContextListener (EscuchaCicloVidaContexto):
+     Al arrancar la aplicación instancía el Gestor de autenticación y lo guarda en el contexto para
+     que los otros componentes web de la autenticación puedan obtenerlo
+     
+3.3 Un IGestorAutenticacion (GestorAutenticacionWeb) que tiene la responsabilidad de gestionar el proceso
+    de autenticación a través de un repositorio de Usuarios (IDirectorioUsuarios) y de un gestor 
+    de accesos (IGestorAccesosAutorizados), responsable de generar un ticket con el que se valide si el acceso a un usuario
+    sigue vigente 
