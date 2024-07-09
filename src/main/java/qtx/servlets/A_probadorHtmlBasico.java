@@ -1,9 +1,9 @@
 package qtx.servlets;
-import javax.servlet.http.*;
+import jakarta.servlet.http.*;
 
 import java.io.*;
 
-import javax.servlet.*;
+import jakarta.servlet.*;
 
 
 public class A_probadorHtmlBasico extends HttpServlet {
